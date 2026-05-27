@@ -180,6 +180,38 @@
       color: #777;
       line-height: 1.5;
     }
+    .fc .fc-toolbar-title {
+      font-size: 20px;
+      white-space: nowrap;
+    }
+
+    .fc .fc-toolbar {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .fc .fc-toolbar-chunk {
+      flex-shrink: 0;
+    }
+
+    .fc .fc-toolbar-chunk:nth-child(2) {
+      flex: 1;
+      min-width: 0;
+      text-align: center;
+    }
+
+    @media (max-width: 700px) {
+      .fc .fc-toolbar-title {
+        font-size: 18px;
+        white-space: nowrap;
+      }
+
+      .fc .fc-header-toolbar {
+        gap: 4px;
+      }
+    }
   </style>
 </head>
 
