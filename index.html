@@ -201,10 +201,24 @@
       min-width: 0;
       text-align: center;
     }
-
+    /* 縮小今天按鈕 */
+    .fc .fc-today-button {
+      width: auto !important;
+      min-width: 42px !important;
+      padding-left: 8px !important;
+      padding-right: 8px !important;
+    }
+    @media (max-width: 700px) {
+      .fc .fc-today-button {
+        min-width: 36px !important;
+        padding-left: 6px !important;
+        padding-right: 6px !important;
+        font-size: 12px !important;
+      }
+    }
     @media (max-width: 700px) {
       .fc .fc-toolbar-title {
-        font-size: 12px;
+        font-size: 8px;
         white-space: nowrap;
       }
 
